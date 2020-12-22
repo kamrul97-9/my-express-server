@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        .btn-circle.btn-md {
+            width: 40px;
+            height: 40px;
+            padding: 4px 10px;
+            border-radius: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+        .btn.btn-sm.btn-info{
+          align-items: center;
+        }
+</style>
+  </head>
+  <body>
+    <div class="col-lg-3 mb-3">
+      <a href="/compose>" class="btn btn-sm btn-info">REGISTER</a>
+    </div>
+
+    <form action = "/home" method="POST">
+      <div class="container my-4">
+        <div class="row justify-content-center">
+          <div class="col-lg-3 mb-3">
+            <div class="card border-info p-1" Style="height: 100%">
+                  <!-- <img class="card-img-top rounded" src="images/<%=user.image%>" alt="user image" height="165"> -->
+
+              <div class="card-body">
+                <h6 class="card-title">
+                  <p class="text-muted">Name:   </p>
+                </h6>
+                <p class="text-muted">Email: </p>
+                <p class="text-muted">District: </p>
+                <a href="/user/<%=user._id%>" class="btn btn-sm btn-info">EDIT</a>
+              </div>
+            </div>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
